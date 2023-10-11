@@ -6,18 +6,7 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  // for React setting
-  "[javascriptreact]": {
+  "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "files.associations": {
-    "*.js": "javascriptreact"  // Default all JS files format to React
-  },
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
-  // Stylelint
-  "editor.codeActionsOnSave": {
-    "source.fixAll.stylelint": true
   }
 }

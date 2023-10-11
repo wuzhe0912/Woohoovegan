@@ -1,19 +1,33 @@
 {
-  "name": "vegan-frontend",
-  "private": true,
+  "name": "simple-streaming-app-api",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "git@github.com:wuzhe0912/simple-streaming-app-api.git",
+  "author": "Pitt Wu <kgb00128@gmail.com>",
+  "license": "MIT",
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "nodemon src/app.js",
+    "start": "node src/app.js",
+    "lint": "eslint '*/**/*.{js,ts}'",
+    "format": "prettier --write '*/**/*.{js,ts,json,md}'"
   },
   "dependencies": {
-    "next": "12.0.2",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-joi-validation": "^5.0.1",
+    "joi": "^17.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.6.1",
+    "socket.io": "^4.7.2",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
-    "eslint": "7",
-    "eslint-config-next": "12.0.2"
+    "eslint": "^8.51.0",
+    "eslint-config-prettier": "^9.0.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3"
   }
 }
